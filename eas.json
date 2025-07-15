@@ -12,10 +12,16 @@
       "distribution": "internal"
     },
     "production": {
+      "android": {
+        "buildType": "apk"   // ✅ Force EAS to build .apk instead of .aab
+      },
+      "ios": {
+        "buildType": "archive" // Optional: still build iOS archive if needed later
+      },
       "autoIncrement": true
     }
   },
   "submit": {
     "production": {}
   }
-}
+    }
